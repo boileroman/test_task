@@ -1,0 +1,194 @@
+.clients {
+  --clientsHeight: 193.75rem;
+  --clientsWidth: 100%;
+  --clientsBgColor: var(--colorBlue);
+  --clientsBorderRadius: 25rem 0 0 0;
+  --clientsPadding: 12rem 0 0 0;
+  --clientsGap: 15.375rem;
+  --clientMinWidth: 29.375rem;
+  --clientMinHeight: 16rem;
+  --clientsMobileGap: 1rem;
+  --clientsMobilePadding: 3rem 0 0 0rem;
+  --clientsMobileH2FontSize: 3rem;
+  --clientsDesktopH2FontSize: 4.5rem;
+  --infoGap: 12.125rem;
+  --infoMobileGap: 3rem;
+  --h2MaxWidth: 27.875rem;
+  --h2LineHeight: 46px;
+  --h2LetterSpacing: 0.05em;
+  --h2Color: var(--colorWhite);
+  --pMaxWidth: 67.5rem;
+  --pFontSize: 16px;
+  --pLineHeight: 26px;
+  --pLetterSpacing: 0.05em;
+  --pColor: var(--colorWhite);
+  --pOpacity: 0.6;
+  --brandButtonFontSize: 2.5rem;
+  --brandButtonLineHeight: 5.75rem;
+  --brandButtonLetterSpacing: 0.02em;
+  --brandButtonColor: var(--colorWhite);
+  --brandMobileMinWidth: 20rem;
+  --brandMobileMinHeight: 12rem;
+  --brandBorder: 1px solid var(--colorWhite);
+
+  display: block;
+  height: var(--clientsHeight);
+  width: var(--clientsWidth);
+  background-color: var(--clientsBgColor);
+  border-radius: var(--clientsBorderRadius);
+  padding: var(--clientsPadding);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--clientsGap);
+
+  &__info {
+    display: flex;
+    gap: var(--infoGap);
+
+    & h2 {
+      max-width: var(--h2MaxWidth);
+      font-size: var(--clientsDesktopH2FontSize);
+      line-height: var(--h2LineHeight);
+      letter-spacing: var(--h2LetterSpacing);
+      color: var(--h2Color);
+    }
+
+    & p {
+      max-width: var(--pMaxWidth);
+      font-size: var(--pFontSize);
+      line-height: var(--pLineHeight);
+      letter-spacing: var(--pLetterSpacing);
+      color: var(--pColor);
+      opacity: var(--pOpacity);
+    }
+
+    @media (min-width: 360px) {
+      padding-left: 10rem;
+    }
+
+    @media (min-width: 1024px) {
+      padding-left: 0;
+    }
+  }
+}
+
+.brands {
+  display: grid;
+
+  & button {
+    font-size: var(--brandButtonFontSize);
+    line-height: var(--brandButtonLineHeight);
+    letter-spacing: var(--brandButtonLetterSpacing);
+    color: var(--brandButtonColor);
+  }
+
+  @media (min-width: 360px) {
+    grid-template-columns: repeat(2, 1fr);
+
+    & li:nth-child(1),
+    & li:nth-child(3),
+    & li:nth-child(5) {
+      border-bottom: var(--brandBorder);
+    }
+
+    & li:nth-child(2),
+    & li:nth-child(4),
+    & li:nth-child(6) {
+      border-bottom: var(--brandBorder);
+      border-left: var(--brandBorder);
+    }
+
+    & li:nth-child(7) {
+      border: none;
+    }
+    & li:nth-child(8) {
+      border-left: var(--brandBorder);
+    }
+
+    & a {
+      font-size: var(--brandButtonFontSize);
+      line-height: var(--brandButtonLineHeight);
+      letter-spacing: var(--brandButtonLetterSpacing);
+      color: var(--brandButtonColor);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(4, 1fr);
+    & li:nth-child(1) {
+      border-bottom: var(--brandBorder);
+    }
+
+    & li:nth-child(2),
+    & li:nth-child(3),
+    & li:nth-child(4) {
+      border-bottom: var(--brandBorder);
+      border-left: var(--brandBorder);
+    }
+
+    & li:nth-child(5) {
+      border: none;
+    }
+
+    & li:nth-child(6),
+    & li:nth-child(7),
+    & li:nth-child(8) {
+      border-left: var(--brandBorder);
+      border-bottom: none;
+    }
+  }
+  & li:nth-child(8) {
+    background-color: rgba(31, 63, 104, 1);
+  }
+}
+
+.brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: 360px) {
+    min-width: var(--brandMobileMinWidth);
+    min-height: var(--brandMobileMinHeight);
+  }
+
+  @media (min-width: 1024px) {
+    min-width: var(--clientMinWidth);
+    min-height: var(--clientMinHeight);
+  }
+}
+
+@media (min-width: 360px) {
+  .clients {
+    gap: var(--clientsMobileGap);
+    padding: var(--clientsMobilePadding);
+
+    &__info {
+      gap: var(--infoMobileGap);
+      flex-direction: column;
+      align-items: center;
+    }
+
+    & h2 {
+      font-size: var(--clientsMobileH2FontSize);
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .clients {
+    gap: var(--clientsGap);
+    padding: var(--clientsPadding);
+
+    &__info {
+      gap: var(--infoGap);
+      flex-direction: row;
+      align-items: center;
+    }
+
+    & h2 {
+      font-size: var(--clientsDesktopH2FontSize);
+    }
+  }
+}

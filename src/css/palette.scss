@@ -1,0 +1,16 @@
+:root {
+  --colorImperialRed: #f93639;
+  --colorBlueGray: #5a98d0;
+  --colorYaleBlue: #1f3f68;
+  --colorLimeGreen: #27c632;
+
+  --colorTransparent: transparent;
+  --colorWhite: #fff;
+  --colorBlack: #000;
+  --colorRed: var(--colorImperialRed);
+  --colorBlue: var(--colorBlueGray);
+  --colorDarkBlue: var(--colorYaleBlue);
+  --colorGreen: var(--colorLimeGreen);
+
+  --boxShadowDefault: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+}

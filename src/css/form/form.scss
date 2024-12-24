@@ -1,0 +1,87 @@
+.modal__form {
+  height: 83.25rem;
+  padding: 0 7rem 0 7rem;
+  margin-top: 7rem;
+  align-items: center;
+  flex-direction: column;
+  gap: 0;
+  & h2 {
+    align-self: center;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #1f3f68;
+  }
+
+  & label {
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #1f3f68;
+    opacity: 0.8;
+    margin-top: 4rem;
+  }
+
+  & form {
+    width: 100%;
+    & button {
+      width: 100%;
+      margin-top: 9rem;
+    }
+
+    & input {
+      opacity: 0.4;
+      border: 1px solid #356ead;
+      border-radius: 10px;
+      min-height: 9rem;
+      padding: 2.625rem 4.5rem 2.625rem 4.5rem;
+
+      &::placeholder {
+        font-size: 16px;
+        line-height: 30px;
+        letter-spacing: 0.04em;
+        color: #1f3f68;
+        opacity: 0.2;
+      }
+    }
+
+    & textarea {
+      opacity: 0.4;
+      border: 1px solid #356ead;
+      border-radius: 10px;
+      min-height: 18rem;
+      padding: 2.625rem 4.5rem 2.625rem 4.5rem;
+
+      &::placeholder {
+        font-size: 16px;
+        line-height: 30px;
+        letter-spacing: 0.04em;
+        color: #1f3f68;
+        opacity: 0.2;
+      }
+    }
+  }
+}
+
+.formInput {
+  opacity: 0.4;
+  border: 1px solid #356ead;
+  border-radius: 10px;
+  min-height: 9rem;
+  padding: 2.625rem 4.5rem 2.625rem 4.5rem;
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #1f3f68;
+    opacity: 0.2;
+  }
+}
+
+.error-message {
+  color: var(--colorRed);
+  font-size: 16px;
+  line-height: 30px;
+  opacity: 0.6;
+}

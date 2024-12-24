@@ -1,0 +1,129 @@
+.content {
+  margin: 24rem 0 21rem 0;
+  max-width: 100%;
+  gap: 12.5rem;
+  @media (min-width: 360px) {
+  }
+
+  @media (min-width: 1024px) {
+    min-height: 145.25rem;
+  }
+
+  &__content {
+    max-width: 117.5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    @media (min-width: 360px) {
+      gap: 6rem;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: flex-end;
+      & li:nth-child(odd) {
+        margin-top: 0;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      max-width: 117.5rem;
+      gap: 12.5rem;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      & li:nth-child(odd) {
+        margin-top: -50rem;
+      }
+    }
+  }
+
+  &__header {
+    width: 52.5rem;
+    align-self: center;
+    max-height: 17.25rem;
+    @media (min-width: 360px) {
+      width: 42.5rem;
+    }
+
+    @media (min-width: 768px) {
+    }
+
+    @media (min-width: 1024px) {
+      width: 52.5rem;
+    }
+  }
+
+  & h2 {
+    max-width: 37rem;
+    color: rgba(49, 96, 153, 1);
+    font-size: 36px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+    font-size: 3rem;
+  }
+
+  &__block {
+    min-height: 67.125rem;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 1.125rem;
+    padding: 5.15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media (min-width: 360px) {
+      margin: 0;
+      width: 43rem;
+    }
+
+    @media (min-width: 768px) {
+      margin: 0;
+      width: 45rem;
+    }
+
+    @media (min-width: 1024px) {
+      margin-left: 7.5rem;
+      width: 45rem;
+    }
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      margin-top: 7rem;
+      gap: 4rem;
+    }
+
+    & h3 {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 30px;
+      letter-spacing: 0.05em;
+      color: #1f3f68;
+    }
+
+    & p {
+      font-size: 16px;
+      line-height: 26px;
+      letter-spacing: 0.05em;
+      color: #1f3f68;
+      opacity: 0.6;
+    }
+
+    & button {
+      font-size: 14px;
+      line-height: 30px;
+      letter-spacing: 0.05em;
+      color: #5a98d0;
+    }
+  }
+
+  &__img {
+    display: flex;
+    max-width: 28rem;
+    max-height: 16.375rem;
+    align-items: flex-end;
+  }
+}

@@ -1,0 +1,14 @@
+import "../css/reset.scss";
+import "../css/fonts.scss";
+import "../css/palette.scss";
+import "../css/media.scss";
+import "../css/vars.scss";
+import "../css/utils.scss";
+import "../css/global.scss";
+import "../css/modalManager/modal.scss";
+import "../css/form/form.scss";
+import "../css/section/header.scss";
+import "../css/section/hero.scss";
+import "../css/section/content.scss";
+import "../css/section/clients.scss";
+import "../css/section/footer.scss";

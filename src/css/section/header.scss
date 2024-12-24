@@ -1,0 +1,19 @@
+.header {
+  --headerWidth: 100%;
+  --headerHeight: 10rem;
+  --headerPadding: 5rem 10.375rem 0 10.375rem;
+
+  height: var(--headerHeight);
+  width: var(--headerWidth);
+  padding: var(--headerPadding);
+  background-color: #fff;
+  position: fixed;
+  z-index: 5;
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__burgerMenu {
+  }
+}

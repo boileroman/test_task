@@ -1,0 +1,17 @@
+.btn {
+  width: 27.5rem;
+  padding: 2rem 0;
+  min-height: 7rem;
+  background-color: rgba(90, 152, 208, 1);
+  border-radius: 1.25rem;
+  color: var(--colorWhite);
+  font-size: 2rem;
+  font-weight: 100;
+  box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+}
+
+.content_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
